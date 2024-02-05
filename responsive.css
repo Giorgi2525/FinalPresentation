@@ -1,0 +1,225 @@
+@media screen and (max-width: 825px) {
+  header nav button {
+    display: none;
+  }
+  header nav ul.flex-center {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    flex-direction: column;
+    gap: 40px;
+    top: 50px;
+    left: -1000px;
+    background-color: var(--whitecollor);
+  }
+  header nav ul.flex-center li a {
+    color: black;
+    font-size: 20px;
+  }
+  header.flex-center {
+    justify-content: space-around;
+  }
+  header.flex-center nav label.burger {
+    display: block;
+  }
+  header.flex-center nav input:checked ~ ul.flex-center {
+    left: 0px;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  main aside.flex-center {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  main aside.flex-center p {
+    display: none;
+  }
+}
+@media screen and (max-width: 825px) {
+  main section.video {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 825px) {
+  header.flex-center {
+    width: 100%;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header.flex-center {
+    width: 100%;
+    height: 65px;
+  }
+}
+@media screen and (max-width: 825px) {
+  main section.titles {
+    display: none;
+  }
+}
+@media screen and (max-width: 825px) {
+  main section.aboutme {
+    width: 100%;
+    height: 800px;
+    flex-direction: column;
+  }
+  main section.aboutme div.txtaboutme {
+    width: 100%;
+    height: 400px;
+  }
+  main section.aboutme div.txtaboutme div.gohome {
+    display: block;
+    display: flex;
+  }
+  main section.aboutme div.txtaboutme br {
+    display: none;
+  }
+  main section.aboutme div.txtaboutme p {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0px;
+  }
+  main section.aboutme div.txtaboutme div.line {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  main section.aboutme div.txtaboutme h2 {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  main section.aboutme div.men {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 825px) {
+  main aside.secbanner {
+    width: 100%;
+    height: 900px;
+  }
+  main aside.secbanner div.secline {
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+  main aside.secbanner h1 {
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 0px;
+  }
+
+  main aside.secbanner section.boxes {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 190px;
+  }
+  main aside.secbanner section.boxes div.first,
+  div.second,
+  div.third {
+    width: 280px;
+    height: 250px;
+  }
+  main aside.secbanner section.boxes div.first h2 {
+    margin: 0px;
+  }
+  main aside.secbanner section.boxes div.first p {
+    margin: 0px;
+    margin-top: 10px;
+  }
+  main aside.secbanner section.boxes div.first section.price {
+    width: 100%;
+    height: 40px;
+    gap: 10px;
+  }
+  main aside.secbanner section.boxes div.first section.thirdbutton {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+  }
+  main aside.secbanner section.boxes div.second h2 {
+    margin: 0px;
+  }
+  main aside.secbanner section.boxes div.second p {
+    margin: 0px;
+    margin-top: 10px;
+  }
+  main aside.secbanner section.boxes div.second section.price {
+    width: 100%;
+    height: 40px;
+    gap: 10px;
+  }
+  main aside.secbanner section.boxes div.second section.fourbutton {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+  }
+  main aside.secbanner section.boxes div.third h2 {
+    margin: 0px;
+  }
+  main aside.secbanner section.boxes div.third p {
+    margin: 0px;
+    margin-top: 10px;
+  }
+  main aside.secbanner section.boxes div.third section.price {
+    width: 100%;
+    height: 40px;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  main aside.secbanner section.boxes div.third section.fivebutton {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 825px) {
+  footer.flex-center {
+    width: 100%;
+    height: 900px;
+    flex-direction: column;
+  }
+  footer.flex-center section.infoside {
+    width: 100%;
+    height: 450px;
+    gap: 10px;
+  }
+  footer.flex-center section.infoside div {
+    margin-left: 40px;
+  }
+  footer.flex-center section.infoside div.pirveli div.thirdline {
+    margin-left: 40px;
+  }
+  footer.flex-center section.infoside div.pirveli {
+    margin: 0px;
+  }
+  footer.flex-center section.infoside div.pirveli h1 {
+    margin-left: 40px;
+  }
+  footer.flex-center section.inputside {
+    width: 100%;
+    height: 450px;
+    align-items: center;
+  }
+  footer.flex-center section.inputside span {
+    margin-bottom: 5px;
+  }
+  footer.flex-center section.inputside input {
+    width: 280px;
+    height: 28px;
+  }
+  footer section.inputside div.flex-center textarea {
+    width: 280px;
+    height: 130px;
+  }
+  footer.flex-center section.inputside aside.morebutton {
+    width: 100%;
+    justify-content: center;
+  }
+}

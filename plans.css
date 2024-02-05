@@ -1,0 +1,322 @@
+:root {
+  --maincollor: #000;
+  --whitecollor: white;
+  --secondarycollor: #317f81;
+  --mainfont: "Montserrat", sans-serif;
+  --secondaryfont: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--mainfont);
+}
+header.flex-center {
+  width: 100%;
+  height: 109px;
+  background-color: var(--whitecollor);
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+header.flex-center nav input {
+  display: none;
+}
+header.flex-center nav label.burger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+header.flex-center nav label.burger div.black {
+  width: 100%;
+  height: 5px;
+  background-color: var(--maincollor);
+  border-radius: 20px;
+}
+header.flex-center nav label.burger div.white {
+  width: 100%;
+  height: 5px;
+  background-color: transparent;
+  border-radius: 20px;
+}
+header.flex-center section a {
+  text-decoration: none;
+  color: var(--maincollor);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+header.flex-center section p {
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  font-family: var(--secondaryfont);
+}
+header.flex-center nav ul {
+  list-style: none;
+  column-gap: 30px;
+  align-items: center;
+}
+header.flex-center nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--maincollor);
+}
+header.flex-center nav ul li a:hover {
+  color: var(--secondarycollor);
+  transition: 0.5s;
+}
+header.flex-center nav ul button {
+  width: 105px;
+  height: 35px;
+  background-color: var(--whitecollor);
+  border: 0px solid var(--whitecollor);
+}
+header.flex-center nav ul button i {
+  font-size: 20px;
+  color: var(--secondarycollor);
+}
+header.flex-center nav ul button a {
+  text-decoration: none;
+  color: var(--secondarycollor);
+  font-size: 15px;
+  padding-left: 8px;
+}
+header.flex-center nav ul button a:hover {
+  color: var(--secondarycollor);
+  transform: 0.5s;
+}
+main {
+  width: 100%;
+  height: 1070px;
+}
+main aside.chat {
+  width: 200px;
+  height: 55px;
+  background-color: var(--maincollor);
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  gap: 10px;
+  align-items: center;
+  z-index: 99;
+}
+main aside.chat i {
+  font-size: 30px;
+  color: var(--whitecollor);
+}
+main aside.chat p {
+  font-size: 15px;
+  color: var(--whitecollor);
+  font-weight: 500;
+}
+main div.gohome {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--maincollor);
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  align-items: center;
+  display: none;
+  z-index: 95;
+}
+main div.gohome a {
+  text-decoration: none;
+  color: var(--whitecollor);
+}
+main section.banner {
+  width: 100%;
+  height: 1200px;
+  background-image: url(./photos/mountins.webp);
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main section.banner aside.title {
+  width: 100%;
+  height: 250px;
+  padding-top: 109px;
+  flex-direction: column;
+  align-items: center;
+}
+main section.banner aside.title h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin: 0px;
+  letter-spacing: 10px;
+}
+main section.banner aside.title p {
+  font-size: 15px;
+  font-weight: 300;
+}
+main section.banner section.boxes {
+  width: 100%;
+  height: 500px;
+  padding: 15px;
+  box-sizing: border-box;
+  align-items: center;
+  column-gap: 40px;
+  flex-wrap: wrap;
+}
+main section.banner section.boxes div {
+  width: 280px;
+  height: 300px;
+  background-color: var(--whitecollor);
+  border: 2px solid var(--maincollor);
+}
+main section.banner section.boxes div.first {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+main section.banner section.boxes div.first h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main section.banner section.boxes div.first p {
+  font-size: 13px;
+  font-weight: 300;
+}
+main section.banner section.boxes div.first span.dollar {
+  width: 80px;
+  justify-content: flex-start;
+}
+main section.banner section.boxes div.first aside.button {
+  width: 100%;
+  height: 85px;
+  align-items: center;
+}
+main section.banner section.boxes div.first aside.button a {
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--maincollor);
+  background-color: var(--maincollor);
+  color: var(--whitecollor);
+}
+main section.banner section.boxes div.first aside.button a:hover {
+  background-color: #242424;
+  transition: 0.5s;
+}
+main section.banner section.boxes div.first span.price {
+  font-size: 40px;
+  font-weight: 300;
+}
+main section.banner section.boxes div.second {
+  border-top: transparent;
+}
+main section.banner section.boxes div.second {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+main section.banner section.boxes div.second span {
+  font-size: 14px;
+  font-weight: 300;
+}
+footer {
+  width: 100%;
+  height: 650px;
+  background-color: var(--secondarycollor);
+}
+footer section.infoside {
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+footer section.infoside div.pirveli {
+  margin: 0px;
+}
+footer section.infoside div.pirveli div.thirdline {
+  width: 50px;
+  border-bottom: 2px solid var(--maincollor);
+  margin-left: 150px;
+  padding-top: 50px;
+}
+footer section.infoside div.pirveli h1 {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin-left: 150px;
+}
+footer section.infoside div {
+  margin-left: 150px;
+}
+footer section.infoside div p,
+a {
+  font-size: 15px;
+  font-weight: 300;
+}
+footer section.infoside div.ic {
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+footer section.inputside {
+  width: 50%;
+  height: 100%;
+  padding-top: 50px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+footer section.inputside div.flex-center {
+  flex-direction: column;
+}
+footer section.inputside div.flex-center textarea {
+  width: 440px;
+  height: 130px;
+  border: 2px solid var(--maincollor);
+  background-color: transparent;
+  resize: none;
+}
+footer section.inputside span {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+footer section.inputside input {
+  width: 440px;
+  height: 35px;
+  border: 2px solid var(--maincollor);
+  background-color: transparent;
+}
+footer section.inputside aside.morebutton {
+  width: 440px;
+  height: 30px;
+  justify-content: flex-end;
+}
+footer section.inputside aside.morebutton a {
+  width: 140px;
+  height: 35px;
+  background-color: var(--maincollor);
+  color: var(--whitecollor);
+  align-items: center;
+  text-decoration: none;
+}
+footer section.inputside aside.morebutton a:hover {
+  background-color: var(--whitecollor);
+  color: var(--maincollor);
+  transition: 0.5s;
+}

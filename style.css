@@ -1,0 +1,479 @@
+:root {
+  --maincollor: #000;
+  --whitecollor: white;
+  --secondarycollor: #317f81;
+  --mainfont: "Montserrat", sans-serif;
+  --secondaryfont: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--mainfont);
+}
+header.flex-center {
+  width: 100%;
+  height: 109px;
+  background-color: var(--whitecollor);
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+header.flex-center section a {
+  text-decoration: none;
+  color: var(--maincollor);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+header.flex-center section p {
+  display: none;
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  font-family: var(--secondaryfont);
+}
+header.flex-center nav input {
+  display: none;
+}
+header.flex-center nav label.burger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+header.flex-center nav label.burger div.black {
+  width: 100%;
+  height: 5px;
+  background-color: var(--maincollor);
+  border-radius: 20px;
+}
+header.flex-center nav label.burger div.white {
+  width: 100%;
+  height: 5px;
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+header.flex-center nav ul {
+  list-style: none;
+  column-gap: 30px;
+  align-items: center;
+}
+header.flex-center nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--maincollor);
+}
+header.flex-center nav ul li a:hover {
+  color: var(--secondarycollor);
+  transition: 0.5s;
+}
+header.flex-center nav ul button {
+  width: 105px;
+  height: 35px;
+  background-color: var(--whitecollor);
+  border: 0px solid var(--whitecollor);
+}
+header.flex-center nav ul button i {
+  font-size: 20px;
+  color: var(--secondarycollor);
+}
+header.flex-center nav ul button a {
+  text-decoration: none;
+  color: var(--secondarycollor);
+  font-size: 15px;
+  padding-left: 8px;
+}
+header.flex-center nav ul button a:hover {
+  color: var(--secondarycollor);
+  transform: 0.5s;
+}
+main aside.flex-center {
+  width: 200px;
+  height: 55px;
+  background-color: var(--maincollor);
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  gap: 10px;
+  align-items: center;
+  z-index: 99;
+}
+main aside.flex-center i {
+  font-size: 30px;
+  color: var(--whitecollor);
+}
+main aside.flex-center p {
+  font-size: 15px;
+  color: var(--whitecollor);
+  font-weight: 500;
+}
+main section.video {
+  width: 100%;
+  height: 100%;
+}
+main section.video video {
+  width: 100%;
+  height: 100%;
+}
+main section.titles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+}
+main section.titles p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+main section.titles h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+  font-size: 110px;
+  font-weight: 600;
+  letter-spacing: 40px;
+}
+main section.titles span {
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+main section.titles div.firstbutton {
+  width: 109px;
+  height: 40px;
+  margin-top: 50px;
+  align-items: center;
+}
+main section.titles div.firstbutton a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--maincollor);
+  width: 109px;
+  height: 40px;
+  background-color: var(--maincollor);
+  color: var(--whitecollor);
+  text-decoration: none;
+}
+main section.titles div.firstbutton a:hover {
+  background-color: var(--whitecollor);
+  color: var(--maincollor);
+  transition: 0.5s;
+}
+main section.aboutme div.line {
+  width: 50px;
+  height: 3px;
+  margin-left: 150px;
+  margin-top: 50px;
+  border-bottom: 3px solid var(--maincollor);
+}
+main section.aboutme h2 {
+  font-size: 42px;
+  font-weight: 600;
+  margin: 25px 0px 0px 140px;
+}
+main section.aboutme p {
+  margin-left: 140px;
+}
+
+main section.aboutme {
+  width: 100%;
+  height: 715px;
+  justify-content: flex-start;
+}
+main section.aboutme div.txtaboutme {
+  width: 50%;
+  height: 100%;
+}
+main section.aboutme div.txtaboutme section.secbutton {
+  width: 100%;
+  height: 50px;
+  justify-content: flex-start;
+}
+main section.aboutme div.txtaboutme section.secbutton a {
+  width: 130px;
+  height: 40px;
+  margin-left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--maincollor);
+  text-decoration: none;
+  background-color: var(--maincollor);
+  color: var(--whitecollor);
+}
+main section.aboutme div.txtaboutme div.gohome {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--maincollor);
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  align-items: center;
+  display: none;
+  z-index: 95;
+}
+main section.aboutme div.txtaboutme div.gohome a {
+  text-decoration: none;
+  color: var(--whitecollor);
+}
+main section.aboutme div.txtaboutme section.secbutton a:hover {
+  background-color: var(--whitecollor);
+  color: var(--maincollor);
+  transition: 0.5s;
+}
+main section.aboutme div.men {
+  width: 50%;
+  height: 100%;
+  background-image: url(./photos/men.webp);
+  object-fit: cover;
+}
+main aside.secbanner {
+  width: 100%;
+  height: 900px;
+  background-image: url(./photos/mountins.webp);
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+main aside.secbanner div.secline {
+  width: 50px;
+  border-bottom: 2px solid var(--maincollor);
+  margin-left: 150px;
+  padding-top: 50px;
+}
+main aside.secbanner h1 {
+  margin-left: 150px;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+main aside.secbanner section.boxes {
+  width: 100%;
+  height: 450px;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+main aside.secbanner section.boxes div.first,
+div.second,
+div.third {
+  width: 290px;
+  height: 400px;
+  border: 5px solid var(--maincollor);
+}
+main aside.secbanner section.boxes div.first h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+main aside.secbanner section.boxes div.first p {
+  font-size: 15px;
+  font-weight: 300;
+}
+main aside.secbanner section.boxes div.first section.price {
+  width: 100%;
+  height: 110px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+main aside.secbanner section.boxes div.first section.price span {
+  font-size: 15px;
+  font-weight: 300;
+}
+main aside.secbanner section.boxes section.thirdbutton {
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  align-items: center;
+}
+main aside.secbanner section.boxes section.thirdbutton a.thirdbuttonlink {
+  width: 100px;
+  height: 40px;
+  background-color: var(--maincollor);
+  align-items: center;
+  text-decoration: none;
+  color: var(--whitecollor);
+}
+main aside.secbanner section.boxes section.thirdbutton a.thirdbuttonlink:hover {
+  background-color: #242424;
+  transition: 0.5s;
+}
+main aside.secbanner section.boxes div.second h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+main aside.secbanner section.boxes div.second p {
+  font-size: 15px;
+  font-weight: 300;
+}
+main aside.secbanner section.boxes div.second section.price {
+  width: 100%;
+  height: 110px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+main aside.secbanner section.boxes div.second section.price span {
+  font-size: 15px;
+  font-weight: 300;
+}
+main aside.secbanner section.boxes section.fourbutton {
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  align-items: center;
+}
+main aside.secbanner section.boxes section.fourbutton a.fourbuttonlink {
+  width: 100px;
+  height: 40px;
+  background-color: var(--maincollor);
+  align-items: center;
+  text-decoration: none;
+  color: var(--whitecollor);
+}
+main aside.secbanner section.boxes section.fourbutton a.fourbuttonlink:hover {
+  background-color: #242424;
+  transition: 0.5s;
+}
+main aside.secbanner section.boxes div.third h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+main aside.secbanner section.boxes div.third p {
+  font-size: 15px;
+  font-weight: 300;
+}
+main aside.secbanner section.boxes div.third section.price {
+  width: 100%;
+  height: 110px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+main aside.secbanner section.boxes div.third section.price span {
+  font-size: 15px;
+  font-weight: 300;
+}
+main aside.secbanner section.boxes section.fivebutton {
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  align-items: center;
+}
+main aside.secbanner section.boxes section.fivebutton a.fivebuttonlink {
+  width: 100px;
+  height: 40px;
+  background-color: var(--maincollor);
+  align-items: center;
+  text-decoration: none;
+  color: var(--whitecollor);
+}
+main aside.secbanner section.boxes section.fivebutton a.fivebuttonlink:hover {
+  background-color: #242424;
+  transition: 0.5s;
+}
+footer {
+  width: 100%;
+  height: 650px;
+  background-color: var(--secondarycollor);
+}
+footer section.infoside {
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+footer section.infoside div.pirveli {
+  margin: 0px;
+}
+footer section.infoside div.pirveli div.thirdline {
+  width: 50px;
+  border-bottom: 2px solid var(--maincollor);
+  margin-left: 150px;
+  padding-top: 50px;
+}
+footer section.infoside div.pirveli h1 {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin-left: 150px;
+}
+footer section.infoside div {
+  margin-left: 150px;
+}
+footer section.infoside div p,
+a {
+  font-size: 15px;
+  font-weight: 300;
+}
+footer section.infoside div.ic {
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+footer section.inputside {
+  width: 50%;
+  height: 100%;
+  padding-top: 50px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+footer section.inputside div.flex-center {
+  flex-direction: column;
+}
+footer section.inputside div.flex-center textarea {
+  width: 440px;
+  height: 130px;
+  border: 2px solid var(--maincollor);
+  background-color: transparent;
+  resize: none;
+}
+footer section.inputside span {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+footer section.inputside input {
+  width: 440px;
+  height: 35px;
+  border: 2px solid var(--maincollor);
+  background-color: transparent;
+}
+footer section.inputside aside.morebutton {
+  width: 440px;
+  height: 30px;
+  justify-content: flex-end;
+}
+footer section.inputside aside.morebutton a {
+  width: 140px;
+  height: 35px;
+  background-color: var(--maincollor);
+  color: var(--whitecollor);
+  align-items: center;
+  text-decoration: none;
+}
+footer section.inputside aside.morebutton a:hover {
+  background-color: var(--whitecollor);
+  color: var(--maincollor);
+  transition: 0.5s;
+}
